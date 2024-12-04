@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <%- include('../partials/head') %>
+  <body>  
+    <%- include('../partials/navbar') %>
+    <main>
+      <h2>Registro</h2>
+      <form>
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre">
+        </div>
+        <div>
+          <label for="genero">Genero</label>
+          <select name="genero" id="genero">
+            <option> -- SELECCIONA UNA OPCIÓN -- </option>
+            <option value="M"> Maculino </option>
+            <option value="F"> Femenino </option>
+            <option value="O"> No Especificar </option>
+          </select>
+        </div>
+        <div>
+          <label for="fechaNacimiento">Fecha de nacimiento</label>
+          <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+        </div>
+        <div>
+          <label for="email">Correo </label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div>
+          <label for="passwd">Contraseña</label>
+          <input type="password" name="passwd" id="passwd">
+        </div>
+        <div>
+          <label for="avatar">Foto de perfil</label>
+          <input type="file" name="avatar" id="avatar">
+        </div>
+        <div>
+          <button type="submit">Crear</button>
+        </div>
+      </form>
+    </main>
+</body>
+</html>

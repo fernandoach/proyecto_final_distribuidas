@@ -1,37 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MikePelis</title>
-    <link rel="stylesheet" href="css/index.css">  
-  </head>
-
-  <body>
-    <header>
-      <nav>
-        <a href="/">
-          <img src="imgs/logo.webp" alt="logo" />
-        </a>
-        <ul>
-          <li>
-            <a href="#">Géneros</a>
-          </li>
-          <li>
-            <a href="#">Peliculas</a>
-          </li>
-          <li>
-            <a href="#">Escritores</a>
-          </li>
-          <li>
-            <a href="#">Directores</a>
-          </li>
-        </ul>
-        <a href="/auth/login" class="login-btn">Login</a>
-      </nav>
-    </header>
-
-    <section>
+<html lang="es">
+  <%- include('../partials/head') %>
+  <body>  
+    <%- include('../partials/navbar') %>
+    <main>
       <h1 class="title">MikePelis</h1>
       <div class="init-section">
         <h2>Estrenos</h2>
@@ -96,6 +68,6 @@
           </div>
         </div>
       </div>
-    </section>
+    </main>
   </body>
 </html>
