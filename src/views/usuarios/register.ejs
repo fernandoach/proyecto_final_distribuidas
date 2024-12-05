@@ -5,7 +5,7 @@
     <%- include('../partials/navbar') %>
     <main>
       <h2>Registro</h2>
-      <form>
+      <form action="/usuarios/register" method="post" enctype="multipart/form-data">
         <div>
           <label for="nombre">Nombre</label>
           <input type="text" name="nombre" id="nombre">
@@ -30,6 +30,10 @@
         <div>
           <label for="passwd">Contraseña</label>
           <input type="password" name="passwd" id="passwd">
+        </div>
+        <div>
+          <label for="repasswd">Repetir Contraseña</label>
+          <input type="password" name="repasswd" id="repasswd">
         </div>
         <div>
           <label for="avatar">Foto de perfil</label>
